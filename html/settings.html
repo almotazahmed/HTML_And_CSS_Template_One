@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/all.min.css"/>
+	<link rel="stylesheet" href="../css/normalize.css"/>
+	<link rel="stylesheet" href="../css/style.css"/>
+	<link rel="stylesheet" href="../css/framework.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <meta name="description" content="This is settings page">
+	<title>Settings</title>
+</head>
+<body>
+	<div class="page">
+    <div class="aside-bar">
+      <div class="logo"><a href="index.html">Elzero</a></div>
+      <ul class="nav">
+        <li class="rad-6 trans-3ms"><a class="trans-3ms" href="index.html"><i class="fa-solid fa-bars"></i><span>Dashboard</span></a></li>
+        <li class="rad-6 trans-3ms active"><a class="trans-3ms" href="settings.html"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+        <li class="rad-6 trans-3ms"><a class="trans-3ms" href="profile.html"><i class="fa-regular fa-user"></i><span>Profile</span></a></li>
+        <li class="rad-6 trans-3ms"><a class="trans-3ms" href="projects.html"><i class="fa-solid fa-diagram-project"></i><span>Projects</span></a></li>
+        <li class="rad-6 trans-3ms"><a class="trans-3ms" href="courses.html"><i class="fa-solid fa-graduation-cap"></i><span>Courses</span></a></li>
+        <li class="rad-6 trans-3ms"><a class="trans-3ms" href="friends.html"><i class="fa-regular fa-circle-user"></i><span>Friends</span></a></li>
+        <li class="rad-6 trans-3ms"><a class="trans-3ms" href="files.html"><i class="fa-regular fa-file"></i><span>Files</span></a></li>
+        <li class="rad-6 trans-3ms"><a class="trans-3ms" href="plans.html"><i class="fa-regular fa-credit-card"></i><span>Plans</span></a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <header>
+        <form action="">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input class="trans-3ms" type="text" name="search" id="search" placeholder="Type A Keyword">
+        </form>
+        <div class="profile-pic">
+          <i class="fa-regular fa-bell"></i>
+          <img src="../images/avatar.png" alt="none">
+        </div>
+      </header>
+      <h1 class="main-title m-20">Settings</h1>
+      <section class="settings-page d-grid gap-20">
+        <article class="site-control bg-white p-20 rad-10">
+          <h2 class="fs-25 mb-10 article-heading fw-bold">Site Control</h2>
+          <span class="d-block fs-14 c-grey mb-20 article-description">Control The Website If There Is Maintenance</span>
+          <div class="website-control mb-20 d-flex space-between align-center">
+            <div class="text">
+              <span class="fs-15 d-block mb-10">Website Control</span>
+              <span class="fs-13 c-grey d-block">Open/Close The Website And Type The Reason</span>
+            </div>
+            <label>
+              <input class="toggle-checkbox" type="checkbox" checked />
+              <div class="toggle-switch"></div>
+            </label>
+          </div>
+          <form action="">
+            <textarea class="rad-6 bg-white border-ccc fs-13" name="area" id="area" placeholder="Close Message Content"></textarea>
+          </form>
+        </article>
+        <article class="general-info bg-white p-20 rad-10">
+          <h2 class="fs-25 mb-10 article-heading fw-bold">
+            General Info
+          </h2>
+          <span class="d-block fs-14 c-grey mb-20 article-description">General Information About Your Account</span>
+          <form action="" class="">
+            <label class="fs-15 d-block" for="first-name">First Name</label>
+            <input class="fs-13 w-full rad-6 border-ccc mb-15" type="text" name="first-name" id="first-name" placeholder="First Name">
+            <label class="fs-15 d-block" for="last-name">last Name</label>
+            <input class="fs-13 w-full rad-6 border-ccc mb-15" type="text" name="last-name" id="last-name" placeholder="Last Name">
+            <label class="fs-15 d-block" for="email">Email</label>
+            <div class="d-flex space-between align-center">
+              <input class="fs-13 w-full rad-6 border-ccc bg-eee" type="email" name="email" id="email" placeholder="o@ss.c">
+              <input class="fs-15 c-blue bg-white" type="submit" value="Change">
+            </div>
+          </form>
+        </article>
+        <article class="security-info bg-white p-20 rad-10">
+          <h2 class="fs-25 mb-10 article-heading fw-bold">Security Info</h2>
+          <span class="d-block fs-14 c-grey mb-20 article-description">Security Information About Your Account</span>
+          <div class="security-row change-pass pb-20 d-flex space-between align-center">
+            <div class="text">
+              <span class="d-block fs-15 mb-10">Password</span>
+              <span class="d-block fs-13 c-grey">Last Change On 06/08/2023</span>
+            </div>
+            <a class="bg-blue c-white fs-15 btn-shape trans-3ms" href="settings.html">Change</a>
+          </div>
+          <div class="security-row pb-20 mt-15 d-flex space-between align-center">
+            <div class="text">
+              <span class="d-block fs-15 mb-10">Two Factor Authentication</span>
+              <span class="d-block fs-13 c-grey">Enable/Disable The Feature</span>
+            </div>
+            <label>
+              <input class="toggle-checkbox" type="checkbox" checked />
+              <div class="toggle-switch"></div>
+            </label>
+          </div>
+          <div class="security-row login-devices pb-20 mt-15 d-flex space-between align-center">
+            <div class="text">
+              <span class="d-block fs-15 mb-10">Devices</span>
+              <span class="d-block fs-13 c-grey">Check The Login Devices List</span>
+            </div>
+            <a class="bg-ccc fs-15 c-black btn-shape trans-3ms" href="settings.html">Devices</a>
+          </div>
+        </article>
+        <article class="social-info bg-white p-20 rad-10">
+          <h2 class="fs-25 mb-10 article-heading fw-bold">Social Info</h2>
+          <span class="d-block fs-14 c-grey mb-20 article-description">Social Media Information</span>
+          <div class="media-row twitter d-flex align-center rad-6 border-ccc mb-15">
+            <div class="icon d-flex center-flex align-center">
+              <i class="fa-solid fa-x fs-15 c-grey d-block"></i>
+            </div>
+            <input class="d-block fs-13 c-grey pl-15 h-full w-full" type="text" name="username" id="username" placeholder="X Username">
+          </div>
+          <div class="media-row facebook d-flex align-center rad-6 border-ccc mb-15">
+            <div class="icon d-flex center-flex align-center">
+              <i class="fa-brands fa-facebook-f c-grey fs-15"></i>
+            </div>
+            <input class="d-block fs-13 c-grey pl-15 h-full w-full" type="text" name="username" id="username" placeholder="Facebook Username">
+          </div>
+          <div class="media-row youtube d-flex align-center rad-6 border-ccc mb-15">
+            <div class="icon d-flex center-flex align-center">
+              <i class="fa-brands fa-youtube c-grey fs-15"></i>
+            </div>
+            <input class="d-block fs-13 c-grey pl-15 h-full w-full" type="text" name="username" id="username" placeholder="Youtube Username">
+          </div>
+          <div class="media-row linkedin d-flex align-center rad-6 border-ccc">
+            <div class="icon d-flex center-flex align-center">
+              <i class="fa-brands fa-linkedin-in c-grey fs-15"></i>
+            </div>
+            <input class="d-block fs-13 c-grey pl-15 h-full w-full" type="text" name="username" id="username" placeholder="Linkedin Username">
+          </div>
+        </article>
+        <article class="widgets-control bg-white p-20 rad-10">
+          <h2 class="fs-25 mb-10 article-heading fw-bold">Widgets Control</h2>
+          <span class="d-block fs-14 c-grey mb-20 article-description">Show/Hide Widgets Control</span>
+          <label class="d-flex align-center w-fit mb-20 fs-15">
+            <input class="widget-checkbox" type="checkbox" checked />
+            <div class="widget-switch"></div>
+            <span class="d-block">Quick Draft</span>
+          </label>
+          <label class="d-flex align-center w-fit mb-20 fs-15">
+            <input class="widget-checkbox" type="checkbox" checked />
+            <div class="widget-switch"></div>
+            <span class="d-block">Yearly Targets</span>
+          </label>
+          <label class="d-flex align-center w-fit mb-20 fs-15">
+            <input class="widget-checkbox" type="checkbox" checked />
+            <div class="widget-switch"></div>
+            <span class="d-block">Tickets Statistics</span>
+          </label>
+          <label class="d-flex align-center w-fit mb-20 fs-15">
+            <input class="widget-checkbox" type="checkbox" checked />
+            <div class="widget-switch"></div>
+            <span class="d-block">Latest News</span>
+          </label>
+          <label class="d-flex align-center w-fit mb-20 fs-15">
+            <input class="widget-checkbox" type="checkbox"/>
+            <div class="widget-switch"></div>
+            <span class="d-block">Latest Tasks</span>
+          </label>
+          <label class="d-flex align-center w-fit fs-15">
+            <input class="widget-checkbox" type="checkbox" checked />
+            <div class="widget-switch"></div>
+            <span class="d-block">Top Search Items</span>
+          </label>
+        </article>  
+        <article class="backup-manager bg-white p-20 rad-10">
+          <h2 class="fs-25 mb-10 article-heading fw-bold">Backup Manager</h2>
+          <span class="d-block fs-14 c-grey mb-20 article-description">Control Backup Time And Location</span>
+          <div class="time">
+            <label class="d-flex align-center w-fit mb-20 fs-15">
+              <input class="backup-radio" name="time" value="daily" type="radio"/>
+              <div class="backup-switch"></div>
+              <span class="d-block">Daily</span>
+            </label>
+            <label class="d-flex align-center w-fit mb-20 fs-15">
+              <input class="backup-radio" name="time" value="Weekly" type="radio" checked/>
+              <div class="backup-switch"></div>
+              <span class="d-block">Weekly</span>
+            </label>
+            <label class="d-flex align-center w-fit mb-20 fs-15">
+              <input class="backup-radio" name="time" value="Monthly" type="radio"/>
+              <div class="backup-switch"></div>
+              <span class="d-block">Monthly</span>
+            </label>
+          </div>
+          <div class="location d-flex align-center">
+            <label class="d-flex align-center w-full fs-15">
+              <input class="backup-radio" name="location" value="daily" type="radio"/>
+              <div class="backup-switch">
+                <i class="fa-solid fa-hard-drive mb-10"></i>
+                <span class="d-block">Megaman</span>
+              </div>
+            </label>
+            <label class="d-flex align-center w-full fs-15">
+              <input class="backup-radio" name="location" value="Weekly" type="radio" checked/>
+              <div class="backup-switch">
+                <i class="fa-solid fa-hard-drive mb-10"></i>
+                <span class="d-block">Zero</span>
+              </div>
+            </label>
+            <label class="d-flex align-center w-full fs-15">
+              <input class="backup-radio" name="location" value="Monthly" type="radio"/>
+              <div class="backup-switch">
+                <i class="fa-solid fa-hard-drive mb-10"></i>
+                <span class="d-block">Sigma</span>
+              </div>
+            </label>
+          </div>
+        </article>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
